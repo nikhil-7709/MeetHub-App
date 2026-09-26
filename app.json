@@ -1,7 +1,7 @@
 {
   "expo": {
-    "name": "react-netive",
-    "slug": "react-netive",
+    "name": "MeetHub",
+    "slug": "meethub",
     "version": "1.0.0",
     "orientation": "portrait",
     "icon": "./assets/images/icon.png",
@@ -28,6 +28,14 @@
     "plugins": [
       "expo-router",
       [
+        "expo-camera",
+        {
+          "cameraPermission": "Allow MeetHub to access your camera for live meetings.",
+          "microphonePermission": "Allow MeetHub to access your microphone for live meetings.",
+          "recordAudioAndroid": true
+        }
+      ],
+      [
         "expo-splash-screen",
         {
           "image": "./assets/images/splash-icon.png",
@@ -43,6 +51,9 @@
     "experiments": {
       "typedRoutes": true,
       "reactCompiler": true
+    },
+    "extra": {
+      "meetingApiUrl": ""
     }
   }
 }
