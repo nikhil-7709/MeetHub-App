@@ -19,7 +19,12 @@
         "monochromeImage": "./assets/images/android-icon-monochrome.png"
       },
       "edgeToEdgeEnabled": true,
-      "predictiveBackGestureEnabled": false
+      "predictiveBackGestureEnabled": false,
+      "permissions": [
+        "android.permission.CAMERA",
+        "android.permission.RECORD_AUDIO"
+      ],
+      "package": "com.nikhilpatil7709.meethub"
     },
     "web": {
       "output": "static",
@@ -53,7 +58,11 @@
       "reactCompiler": true
     },
     "extra": {
-      "meetingApiUrl": ""
+      "meetingApiUrl": "",
+      "router": {},
+      "eas": {
+        "projectId": "37929e11-aadd-4489-a7a4-fee47477bd02"
+      }
     }
   }
 }
